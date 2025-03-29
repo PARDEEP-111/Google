@@ -20,6 +20,7 @@ header{
     /* border: 2px solid black; */
 }
 .link{
+    color: black;
     margin-top: 22px;
     margin-left: 23px;
     text-decoration: none;
@@ -33,8 +34,14 @@ header{
     height: 30px;
     width: 60px;
     border-radius: 5px;
-    background-color: rgb(147, 192, 250);
+    font-weight: bold;
+    background-color: #1a73e8;
+    cursor: pointer;
+    color: white;
     border: none;
+}
+.login:hover{
+    background-color: #1a72e4;
 }
 .login-page{
     display: flex;
@@ -42,30 +49,109 @@ header{
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 50vh;
-    border: 2px solid black;
+    height: 70vh;
+    /* border: 2px solid black; */
 }
-.search-bar{
+.bar{
+    /* gap: 10px; */
+    border-radius: 50px;
+    /* height: auto; */
+    box-shadow: 6px 5px 8px rgb(201, 200, 200);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    
 }
 .logo{
-    height: 250px;
-    width: 300px;
+    /* margin-top: 35px; */
+    margin-bottom: 50px;
+    height: 92px;
+    width: 272px;
     object-fit: contain;
 }
 .bar{
     position: relative;
     top: -25px;
-    width: 30vw;
-    border: 1px solid gray;
-    width: autopx;
+    width: 582px;
+    border: 1px solid lightgray;
     height: 50px;
 }
 .icon{
-    height: 18px;
+    margin: 10px;
+    height: 25px;
     width: auto;
 }
-#search{
-    height: 48px;
-    border: none;
-    width: 25vw;
+.search-png{
+    height: 20px;
 }
+#search{
+    height: 46px;
+    border: none;
+    width: 443px;
+}
+.btn{
+    background-color: white;
+    border: 5px ;
+    border: none;
+    width: 127px;
+    height: 36px;
+}
+.btn:hover{
+    border: 1px solid lightgray;
+}
+.lan{
+    color: #1a0dab;
+    /* font-size: 10px; */
+    padding: 5px;
+    text-decoration: none;
+}
+.lnaguage{
+    margin-top: 30px;
+    /* border: 2px solid red; */
+    font-size: 12px;
+    height: 30px;
+}
+a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: rgb(245, 245, 245);
+    /* padding: 10px; */
+    height:90px;
+    width: 100vw;
+    /* border: 2px solid blue; */
+    position: absolute;
+    bottom: 0px;
+}
+.location{
+    height: 45px;
+    padding: 15px;
+    /* border: 2px solid green; */
+
+}
+
+ .term-and-more{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: 45px;
+    border-top: 1px solid rgb(202, 202, 202);
+ }
+.term-and-more a{
+    color: black;
+    margin: 15px;
+    font-size: 14px;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+    .bar{
+        width: 310px;
+    }
+    .logo{
+        width: 200px;
+    }
+  }
